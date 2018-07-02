@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Proekspert</string>
+    <string name="toolbar_title">Soccer World Cup</string>
+    <string name="toolbar_subtitle">Predictions</string>
+    <string name="action_results_title">Get Results >></string>
+    <string name="action_predictions">Restart</string>
+    <string name="match_item_splitter">-</string>
+</resources>

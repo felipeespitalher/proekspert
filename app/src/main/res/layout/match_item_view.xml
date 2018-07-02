@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/match_team_1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/match_team_1_score"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Barcelona" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/match_team_1_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/match_item_splitter"
+        app:layout_constraintStart_toEndOf="@+id/match_team_1_name"
+        tools:text="1" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/match_item_splitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/match_item_splitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/match_team_2_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/match_team_2_name"
+        app:layout_constraintStart_toEndOf="@+id/match_item_splitter"
+        tools:text="0" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/match_team_2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/match_team_2_score"
+        tools:text="Roma" />
+
+    <com.passos.proekspert.ui.component.HorizontalLineView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/match_item_splitter" />
+
+</android.support.constraint.ConstraintLayout>
